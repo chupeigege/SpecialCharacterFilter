@@ -1,0 +1,7 @@
+获取工程路径，判断要重定向的地址必须在工程下
+		String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + request.getContextPath() + "/";
+		String url = request.getParameter("url");
+		if(StringUtils.contains(url,basePath)){
+			return "redirect:"+url;
+		}
+		return "error/404";

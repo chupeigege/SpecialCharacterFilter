@@ -1,0 +1,13 @@
+	<filter>
+		<description>请求参数过滤器</description>
+		<filter-name>requestParamFilter</filter-name>
+		<filter-class>com.cloudcall.kindergarten.modules.sys.filter.RequestParamFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>requestParamFilter</filter-name>
+		<url-pattern>/a/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>requestParamFilter</filter-name>
+		<url-pattern>/f/*</url-pattern>
+	</filter-mapping>
